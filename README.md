@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Ollama](https://img.shields.io/badge/Ollama-Enabled-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+
 
 This repository contains a functional implementation of the **MAKER framework** (Multi-Agent Knowledge & Enhanced Reasoning), designed to solve algorithmic puzzles using Local Large Language Models (LLMs) with high reliability.
 
@@ -18,7 +18,7 @@ This implementation reproduces the core logic of the paper—specifically the **
 
 ## 🌟 Features
 
-*   **🧠 Local LLM Inference:** Runs entirely offline using [Ollama](https://ollama.com/), compatible with models like `gpt-oss:20b`, `llama3`, or `mistral`.
+*   **🧠 Local LLM Inference:** Runs entirely offline using [Ollama](https://ollama.com/), compatible with models like `gpt-oss:20b`.
 *   **🛡️ Verification System (Paper Implementation):**
     *   **Red Flag Checker:** Automatically rejects responses that violate format rules or token limits.
     *   **Consensus Voting:** Uses a "Best-of-N" voting mechanism to ensure the next move is statistically reliable before execution.
@@ -39,14 +39,14 @@ This implementation reproduces the core logic of the paper—specifically the **
 ## Usage
 Open Hanoi_MAKER_Enhanced.ipynb.
 Configure your run in the main() function:
-code
-Python
+```python
 CONFIG = {
-    'num_disks': 4,              # Difficulty (Start with 4 or 5)
-    'model_name': 'gpt-oss:20b', # Must match your pulled model
-    'max_attempts': 3,           # Retries per step
-    'voting_k': 2,               # Votes needed for consensus
+'num_disks': 4, # Difficulty (Start with 4 or 5)
+'model_name': 'gpt-oss:20b', # Must match your pulled model
+'max_attempts': 3, # Retries per step
+'voting_k': 2, # Votes needed for consensus
 }
+```
 
 Run all cells.
 The script will:
