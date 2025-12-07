@@ -58,7 +58,7 @@ Generate and display the dashboard_X_standalone.html.
 📚 Reference
 If you use this code or concepts in your work, please credit the original authors of the paper:
 
-Bibtex
+```bibtex
 @article{meyerson2025solving,
   title={Solving a Million-Step LLM Task with Zero Errors},
   author={Meyerson, Elliot and Paolo, Giuseppe and Dailey, Roberto and Shahrzad, Hormoz and Francon, Olivier and Hayes, Conor F and Qiu, Xin and Hodjat, Babak and Miikkulainen, Risto},
